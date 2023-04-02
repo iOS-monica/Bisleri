@@ -26,6 +26,7 @@
 		EB1C340C29D98528002096F8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340B29D98528002096F8 /* MenuView.swift */; };
 		EB1C340E29D9868C002096F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340D29D9868C002096F8 /* ProfileView.swift */; };
 		EB1C341029D98996002096F8 /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340F29D98996002096F8 /* FollowersView.swift */; };
+		EB1C341529D99788002096F8 /* DashboardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C341429D99788002096F8 /* DashboardDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		EB1C340B29D98528002096F8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		EB1C340D29D9868C002096F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB1C340F29D98996002096F8 /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
+		EB1C341429D99788002096F8 /* DashboardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				EB1C340B29D98528002096F8 /* MenuView.swift */,
 				EB1C340D29D9868C002096F8 /* ProfileView.swift */,
 				EB1C340F29D98996002096F8 /* FollowersView.swift */,
+				EB1C341429D99788002096F8 /* DashboardDetailsView.swift */,
 				EB1C340429D97D05002096F8 /* DashboardViewModels */,
 			);
 			path = DashboardView;
@@ -266,6 +269,7 @@
 				EB1C33EA29D96A89002096F8 /* NetworkError.swift in Sources */,
 				EB1C33F729D97AE3002096F8 /* NetworkMonitor.swift in Sources */,
 				EB1C341029D98996002096F8 /* FollowersView.swift in Sources */,
+				EB1C341529D99788002096F8 /* DashboardDetailsView.swift in Sources */,
 				EB1C340C29D98528002096F8 /* MenuView.swift in Sources */,
 				EB1C33F529D97AB4002096F8 /* ActivityIndicator.swift in Sources */,
 				EB1C340A29D97E37002096F8 /* Constants.swift in Sources */,

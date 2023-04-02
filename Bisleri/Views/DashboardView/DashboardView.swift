@@ -9,12 +9,15 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        VStack(spacing: 20) {
-            MenuView()
-            ProfileView()
-            FollowersView()
+        ScrollView {
+            VStack(spacing: 20) {
+                MenuView()
+                ProfileView()
+                FollowersView()
+                DashboardDetailsView()
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
