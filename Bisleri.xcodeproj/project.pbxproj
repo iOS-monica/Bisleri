@@ -8,17 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		EB1C33D729D95C95002096F8 /* BisleriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33D629D95C95002096F8 /* BisleriApp.swift */; };
-		EB1C33D929D95C96002096F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33D829D95C96002096F8 /* ContentView.swift */; };
 		EB1C33DB29D95C99002096F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1C33DA29D95C99002096F8 /* Assets.xcassets */; };
 		EB1C33DE29D95C99002096F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1C33DD29D95C99002096F8 /* Preview Assets.xcassets */; };
+		EB1C33E629D969FC002096F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33E529D969FC002096F8 /* NetworkManager.swift */; };
+		EB1C33E829D96A60002096F8 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33E729D96A60002096F8 /* EndPoint.swift */; };
+		EB1C33EA29D96A89002096F8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33E929D96A89002096F8 /* NetworkError.swift */; };
+		EB1C33ED29D96B65002096F8 /* DashboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33EC29D96B65002096F8 /* DashboardService.swift */; };
+		EB1C33F029D978F6002096F8 /* EndPoint+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33EF29D978F6002096F8 /* EndPoint+URL.swift */; };
+		EB1C33F229D97973002096F8 /* EndPoint+Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33F129D97973002096F8 /* EndPoint+Dashboard.swift */; };
+		EB1C33F529D97AB4002096F8 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33F429D97AB4002096F8 /* ActivityIndicator.swift */; };
+		EB1C33F729D97AE3002096F8 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33F629D97AE3002096F8 /* NetworkMonitor.swift */; };
+		EB1C33FA29D97B54002096F8 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33F929D97B54002096F8 /* GeneralResponse.swift */; };
+		EB1C33FE29D97BD3002096F8 /* DashboardPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C33FD29D97BD3002096F8 /* DashboardPhoto.swift */; };
+		EB1C340629D97D1D002096F8 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340529D97D1D002096F8 /* DashboardViewModel.swift */; };
+		EB1C340829D97D4D002096F8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340729D97D4D002096F8 /* DashboardView.swift */; };
+		EB1C340A29D97E37002096F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340929D97E37002096F8 /* Constants.swift */; };
+		EB1C340C29D98528002096F8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340B29D98528002096F8 /* MenuView.swift */; };
+		EB1C340E29D9868C002096F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340D29D9868C002096F8 /* ProfileView.swift */; };
+		EB1C341029D98996002096F8 /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340F29D98996002096F8 /* FollowersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB1C33D329D95C95002096F8 /* Bisleri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bisleri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1C33D629D95C95002096F8 /* BisleriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BisleriApp.swift; sourceTree = "<group>"; };
-		EB1C33D829D95C96002096F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB1C33DA29D95C99002096F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1C33DD29D95C99002096F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB1C33E529D969FC002096F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB1C33E729D96A60002096F8 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		EB1C33E929D96A89002096F8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EB1C33EC29D96B65002096F8 /* DashboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardService.swift; sourceTree = "<group>"; };
+		EB1C33EF29D978F6002096F8 /* EndPoint+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+URL.swift"; sourceTree = "<group>"; };
+		EB1C33F129D97973002096F8 /* EndPoint+Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+Dashboard.swift"; sourceTree = "<group>"; };
+		EB1C33F429D97AB4002096F8 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		EB1C33F629D97AE3002096F8 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		EB1C33F929D97B54002096F8 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		EB1C33FD29D97BD3002096F8 /* DashboardPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPhoto.swift; sourceTree = "<group>"; };
+		EB1C340529D97D1D002096F8 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		EB1C340729D97D4D002096F8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		EB1C340929D97E37002096F8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EB1C340B29D98528002096F8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		EB1C340D29D9868C002096F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EB1C340F29D98996002096F8 /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +81,14 @@
 		EB1C33D529D95C95002096F8 /* Bisleri */ = {
 			isa = PBXGroup;
 			children = (
+				EB1C33E429D969BD002096F8 /* Network */,
+				EB1C33EB29D96B39002096F8 /* Services */,
+				EB1C33EE29D978AA002096F8 /* EndPoints */,
+				EB1C33F329D97A82002096F8 /* Helper */,
+				EB1C33F829D97B3C002096F8 /* Models */,
+				EB1C33FF29D97C60002096F8 /* Views */,
+				EB1C340329D97CE9002096F8 /* ViewModels */,
 				EB1C33D629D95C95002096F8 /* BisleriApp.swift */,
-				EB1C33D829D95C96002096F8 /* ContentView.swift */,
 				EB1C33DA29D95C99002096F8 /* Assets.xcassets */,
 				EB1C33DC29D95C99002096F8 /* Preview Content */,
 			);
@@ -65,6 +101,87 @@
 				EB1C33DD29D95C99002096F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB1C33E429D969BD002096F8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C33E529D969FC002096F8 /* NetworkManager.swift */,
+				EB1C33E729D96A60002096F8 /* EndPoint.swift */,
+				EB1C33E929D96A89002096F8 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EB1C33EB29D96B39002096F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C33EC29D96B65002096F8 /* DashboardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB1C33EE29D978AA002096F8 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C33EF29D978F6002096F8 /* EndPoint+URL.swift */,
+				EB1C33F129D97973002096F8 /* EndPoint+Dashboard.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		EB1C33F329D97A82002096F8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C33F429D97AB4002096F8 /* ActivityIndicator.swift */,
+				EB1C33F629D97AE3002096F8 /* NetworkMonitor.swift */,
+				EB1C340929D97E37002096F8 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EB1C33F829D97B3C002096F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C33F929D97B54002096F8 /* GeneralResponse.swift */,
+				EB1C33FD29D97BD3002096F8 /* DashboardPhoto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB1C33FF29D97C60002096F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C340029D97C6E002096F8 /* DashboardView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB1C340029D97C6E002096F8 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C340729D97D4D002096F8 /* DashboardView.swift */,
+				EB1C340B29D98528002096F8 /* MenuView.swift */,
+				EB1C340D29D9868C002096F8 /* ProfileView.swift */,
+				EB1C340F29D98996002096F8 /* FollowersView.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		EB1C340329D97CE9002096F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C340429D97D05002096F8 /* DashboardViewModels */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB1C340429D97D05002096F8 /* DashboardViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C340529D97D1D002096F8 /* DashboardViewModel.swift */,
+			);
+			path = DashboardViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +254,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1C33D929D95C96002096F8 /* ContentView.swift in Sources */,
+				EB1C33F029D978F6002096F8 /* EndPoint+URL.swift in Sources */,
+				EB1C33FE29D97BD3002096F8 /* DashboardPhoto.swift in Sources */,
+				EB1C33E629D969FC002096F8 /* NetworkManager.swift in Sources */,
+				EB1C340829D97D4D002096F8 /* DashboardView.swift in Sources */,
+				EB1C33E829D96A60002096F8 /* EndPoint.swift in Sources */,
+				EB1C33FA29D97B54002096F8 /* GeneralResponse.swift in Sources */,
 				EB1C33D729D95C95002096F8 /* BisleriApp.swift in Sources */,
+				EB1C33ED29D96B65002096F8 /* DashboardService.swift in Sources */,
+				EB1C340E29D9868C002096F8 /* ProfileView.swift in Sources */,
+				EB1C33EA29D96A89002096F8 /* NetworkError.swift in Sources */,
+				EB1C33F729D97AE3002096F8 /* NetworkMonitor.swift in Sources */,
+				EB1C341029D98996002096F8 /* FollowersView.swift in Sources */,
+				EB1C340C29D98528002096F8 /* MenuView.swift in Sources */,
+				EB1C33F529D97AB4002096F8 /* ActivityIndicator.swift in Sources */,
+				EB1C340A29D97E37002096F8 /* Constants.swift in Sources */,
+				EB1C33F229D97973002096F8 /* EndPoint+Dashboard.swift in Sources */,
+				EB1C340629D97D1D002096F8 /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
