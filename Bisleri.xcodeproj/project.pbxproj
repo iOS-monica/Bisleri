@@ -164,6 +164,7 @@
 				EB1C340B29D98528002096F8 /* MenuView.swift */,
 				EB1C340D29D9868C002096F8 /* ProfileView.swift */,
 				EB1C340F29D98996002096F8 /* FollowersView.swift */,
+				EB1C340429D97D05002096F8 /* DashboardViewModels */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -171,7 +172,6 @@
 		EB1C340329D97CE9002096F8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				EB1C340429D97D05002096F8 /* DashboardViewModels */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";

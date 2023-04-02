@@ -12,6 +12,7 @@ struct ProfileView: View {
         HStack(spacing: 40) {
             CommonSubProfileView(imageName: "upload", textData: "Upload")
             CommonSubProfileView(imageName: "userImage", textData: "John.doe")
+                .font(.system(size: 22))
             CommonSubProfileView(imageName: "edit", textData: "Edit")
         }
     }
