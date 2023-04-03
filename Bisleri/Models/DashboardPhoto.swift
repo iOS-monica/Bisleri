@@ -17,3 +17,8 @@ struct DashboardPhoto: Codable {
     
 }
 
+struct LimitDetails: Codable {
+    var page: Int = 1
+    var limit: Int = 10
+}
+

@@ -12,9 +12,7 @@ protocol DashboardServiceProtocol: AnyObject {
     
     var networker: NetworkerProtocol { get }
     
-   // func fetchUser<T>(type: T.Type, params: Credentials) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable
-    
-   // func fetchImage<T>(type: T.Type) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable
+    func fetchImage<T>(type: T.Type, params: LimitDetails) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable
     
 }
 
@@ -26,20 +24,16 @@ final class DashboardService: DashboardServiceProtocol {
         self.networker = networker
     }
     
-//    func fetchImage<T>(type: T.Type) -> AnyPublisher<GeneralResponse<T>, Error> where T : Decodable {
-//        <#code#>
-//    }
+    func fetchImage<T>(type: T.Type, params: LimitDetails) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable {
+        
+        let endpoint = Endpoint.dashboard
+        
+        return networker.request(type: type,
+                                 url: endpoint.url,
+                                 headers: endpoint.headers,
+                                 parameters: params.dictionary,
+                                 method: .get)
     
-//    func fetchUser<T>(type: T.Type, params: Credentials) -> AnyPublisher<GeneralResponse<T>, Error> where T : Decodable {
-//
-//        let endpoint = Endpoint.Dashboard
-//
-//        return networker.request(type: type,
-//                                 url: endpoint.url,
-//                                 headers: endpoint.headers,
-//                                 parameters: params.dictionary,
-//                                 method: .post)
-//
-//    }
+    }
     
 }

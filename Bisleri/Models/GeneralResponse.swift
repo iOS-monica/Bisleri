@@ -9,6 +9,12 @@ import Foundation
 
 struct GeneralResponse<T: Codable>: Codable {
     var status: String?
-    var data: T?
+    var data: [T]?
     var message: String?
 }
+
+
+
+
+
+

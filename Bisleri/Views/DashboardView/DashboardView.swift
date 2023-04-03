@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct DashboardView: View {
-    var body: some View {
+    
+    @StateObject private var viewModel = DashboardViewModel()
+    
+    private var contentView: some View {
         ScrollView {
             VStack(spacing: 20) {
                 MenuView()
@@ -18,7 +21,20 @@ struct DashboardView: View {
             }
             .padding()
         }
+        .onAppear {
+            viewModel.getUploadDetails()
+        }
     }
+    
+    var body: some View {
+        ZStack {
+            contentView
+            if viewModel.showProgressView {
+                ActivityIndicatorView()
+            }
+        }
+    }
+    
 }
 
 struct DashboardView_Previews: PreviewProvider {

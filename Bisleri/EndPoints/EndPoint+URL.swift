@@ -10,10 +10,9 @@ import Foundation
 extension Endpoint {
     var url: URL {
         var components = URLComponents()
-        components.scheme = "http"
-        components.host = "3.12.188.195"
-        components.port = 8082
-        components.path = "/api" + path
+        components.scheme = "https"
+        components.host = "jsonplaceholder.typicode.com"
+        components.path = path
         components.queryItems = queryItems
         
         guard let url = components.url else {
@@ -29,7 +28,7 @@ extension Endpoint {
           //  "Authorization": "Bearer \(KeychainStorage.getAccessToken())"
         ]
     }
-    
+ 
    static func getAPIKey(apiKey: String) -> String {
         return Bundle.main.infoDictionary?[apiKey] as? String ?? ""
     }

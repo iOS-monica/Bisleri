@@ -18,8 +18,8 @@ protocol NetworkerProtocol: AnyObject {
                     parameters: [String: Any]?,
                     method: HTTPMethod) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable
     
-    func getData(url: URL,
-                 headers: Headers) -> AnyPublisher<Data, URLError>
+  //  func getData(url: URL,
+   //              headers: Headers) -> AnyPublisher<Data, URLError>
 }
 
 final class Networker: NetworkerProtocol {
@@ -31,7 +31,9 @@ final class Networker: NetworkerProtocol {
                     method: HTTPMethod) -> AnyPublisher<GeneralResponse<T>, Error> where T : Decodable {
         
         var urlRequest = URLRequest(url: url)
+        
         urlRequest.httpMethod = method.rawValue
+        
         
         if let dataDictionary = parameters {
             do {
@@ -49,25 +51,15 @@ final class Networker: NetworkerProtocol {
             }
         }
         
+        print("URL", urlRequest)
+        
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .map(\.data)
+            .map { data in
+                print("Data", data.response)
+                return data.data
+            }
             .decode(type: GeneralResponse.self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
     
-    func getData(url: URL,
-                 headers: Headers) -> AnyPublisher<Data, URLError> {
-        
-        var urlRequest = URLRequest(url: url)
-        
-        headers.forEach { key, value in
-            if let value = value as? String {
-                urlRequest.setValue(value, forHTTPHeaderField: key)
-            }
-        }
-        
-        return URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .map(\.data)
-            .eraseToAnyPublisher()
-    }
 }

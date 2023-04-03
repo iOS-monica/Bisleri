@@ -10,7 +10,10 @@ import Foundation
 extension Endpoint {
     
     static var dashboard: Self {
-        return Endpoint(path: "/photos")
+        
+        let queryItems = [URLQueryItem(name: "page", value: "1"), URLQueryItem(name: "limit", value: "20")]
+        
+        return Endpoint(path: "/photos", queryItems: queryItems)
     }
    
 }

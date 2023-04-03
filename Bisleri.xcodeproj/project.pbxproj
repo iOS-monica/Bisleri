@@ -27,6 +27,8 @@
 		EB1C340E29D9868C002096F8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340D29D9868C002096F8 /* ProfileView.swift */; };
 		EB1C341029D98996002096F8 /* FollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C340F29D98996002096F8 /* FollowersView.swift */; };
 		EB1C341529D99788002096F8 /* DashboardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C341429D99788002096F8 /* DashboardDetailsView.swift */; };
+		EB1C341A29D9B16C002096F8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C341929D9B16C002096F8 /* Extension.swift */; };
+		EBE01F3D29D9B68000521B4B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE01F3C29D9B68000521B4B /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		EB1C340D29D9868C002096F8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EB1C340F29D98996002096F8 /* FollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersView.swift; sourceTree = "<group>"; };
 		EB1C341429D99788002096F8 /* DashboardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardDetailsView.swift; sourceTree = "<group>"; };
+		EB1C341929D9B16C002096F8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EBE01F3C29D9B68000521B4B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				EB1C33F429D97AB4002096F8 /* ActivityIndicator.swift */,
 				EB1C33F629D97AE3002096F8 /* NetworkMonitor.swift */,
 				EB1C340929D97E37002096F8 /* Constants.swift */,
+				EB1C341929D9B16C002096F8 /* Extension.swift */,
+				EBE01F3C29D9B68000521B4B /* ImageLoader.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -167,7 +173,6 @@
 				EB1C340D29D9868C002096F8 /* ProfileView.swift */,
 				EB1C340F29D98996002096F8 /* FollowersView.swift */,
 				EB1C341429D99788002096F8 /* DashboardDetailsView.swift */,
-				EB1C340429D97D05002096F8 /* DashboardViewModels */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 		EB1C340329D97CE9002096F8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EB1C340429D97D05002096F8 /* DashboardViewModels */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			dependencies = (
 			);
 			name = Bisleri;
+			packageProductDependencies = (
+			);
 			productName = Bisleri;
 			productReference = EB1C33D329D95C95002096F8 /* Bisleri.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +239,8 @@
 				Base,
 			);
 			mainGroup = EB1C33CA29D95C95002096F8;
+			packageReferences = (
+			);
 			productRefGroup = EB1C33D429D95C95002096F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +269,7 @@
 			files = (
 				EB1C33F029D978F6002096F8 /* EndPoint+URL.swift in Sources */,
 				EB1C33FE29D97BD3002096F8 /* DashboardPhoto.swift in Sources */,
+				EBE01F3D29D9B68000521B4B /* ImageLoader.swift in Sources */,
 				EB1C33E629D969FC002096F8 /* NetworkManager.swift in Sources */,
 				EB1C340829D97D4D002096F8 /* DashboardView.swift in Sources */,
 				EB1C33E829D96A60002096F8 /* EndPoint.swift in Sources */,
@@ -270,6 +281,7 @@
 				EB1C33F729D97AE3002096F8 /* NetworkMonitor.swift in Sources */,
 				EB1C341029D98996002096F8 /* FollowersView.swift in Sources */,
 				EB1C341529D99788002096F8 /* DashboardDetailsView.swift in Sources */,
+				EB1C341A29D9B16C002096F8 /* Extension.swift in Sources */,
 				EB1C340C29D98528002096F8 /* MenuView.swift in Sources */,
 				EB1C33F529D97AB4002096F8 /* ActivityIndicator.swift in Sources */,
 				EB1C340A29D97E37002096F8 /* Constants.swift in Sources */,
