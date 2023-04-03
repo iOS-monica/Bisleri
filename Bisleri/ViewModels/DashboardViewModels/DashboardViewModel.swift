@@ -25,10 +25,7 @@ final class DashboardViewModel: ObservableObject {
     
     
     public func getUploadDetails() {
-        
-        let limitDetails = LimitDetails(page: 1, limit: 20)
-        
-        dashboardService.fetchImage(type: DashboardPhoto.self, params: limitDetails)
+        dashboardService.fetchImage(type: DashboardPhoto.self)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 self?.showProgressView = false
@@ -40,11 +37,9 @@ final class DashboardViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] response in
                 self?.showProgressView = false
-                print("Responsee", response)
+                self?.uploadDetails = response
             }
             .store(in: &cancellables)
-        
     }
-    
     
 }

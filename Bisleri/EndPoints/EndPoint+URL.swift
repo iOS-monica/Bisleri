@@ -8,6 +8,7 @@
 import Foundation
 
 extension Endpoint {
+    
     var url: URL {
         var components = URLComponents()
         components.scheme = "https"
@@ -24,17 +25,9 @@ extension Endpoint {
     
     var headers: [String: Any] {
         return [
-            "content-type": "application/json",
-          //  "Authorization": "Bearer \(KeychainStorage.getAccessToken())"
+            "content-type": "application/json"
         ]
     }
- 
-   static func getAPIKey(apiKey: String) -> String {
-        return Bundle.main.infoDictionary?[apiKey] as? String ?? ""
-    }
+    
 }
 
-public enum HTTPMethod: String {
-    case get = "get"
-    case post = "post"
-}

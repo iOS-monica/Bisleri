@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "placeholder-image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

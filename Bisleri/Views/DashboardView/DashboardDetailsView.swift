@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct DashboardDetailsView: View {
+    
+    @Binding var photos: [DashboardPhoto]
+    
     var body: some View {
         TabbedView()
-        UploadView()
+        UploadView(photos: $photos)
     }
 }
 
@@ -38,7 +41,7 @@ struct TabbedView: View {
 
 struct UploadView: View {
     
-     let data = (1...2).map { "Item \($0)" }
+    @Binding var photos: [DashboardPhoto]
     
     let columns = [
         GridItem(.flexible()),
@@ -47,8 +50,10 @@ struct UploadView: View {
     
     var body: some View {
         LazyVGrid(columns: columns, spacing: 5) {
-            ForEach(data, id: \.self) { item in
-                // Image("userImage")
+            ForEach(photos, id: \.self) { item in
+                CommonURLImageView(imageURL: item.url,
+                                   height: 150,
+                                   width: 150)
             }
         }
         .padding(.horizontal)
@@ -58,26 +63,16 @@ struct UploadView: View {
 struct CommonURLImageView: View {
     
     var imageURL: String
-    var placeHolderImage: String
     var height: CGFloat
     var width: CGFloat
     
     var body: some View {
-        
-//        KFImage(URL(string: imageURL))
-//            .placeholder { CommonImageView(imageName: "placeHolderImage",
-//                                           height: height,
-//                                           width: width) }
-//            .resizable()
-//            .scaledToFit()
-//            .frame(width: width, height: height, alignment: .center)
-        
         AsyncImage(url: URL(string: imageURL)!,
-                       placeholder: { CommonImageView(imageName: "placeHolderImage",
-                                                                         height: height,
-                                                                         width: width) },
-                       image: { Image(uiImage: $0).resizable() })
-               .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
+                   placeholder: { CommonImageView(imageName: "placeHolderImage",
+                                                  height: height,
+                                                  width: width) },
+                   image: { Image(uiImage: $0).resizable() })
+            .scaledToFit()
     }
 }
 
@@ -96,8 +91,3 @@ struct CommonImageView: View {
     }
 }
 
-struct DashboardDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardDetailsView()
-    }
-}

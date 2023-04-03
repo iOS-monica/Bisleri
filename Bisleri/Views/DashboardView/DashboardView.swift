@@ -17,7 +17,7 @@ struct DashboardView: View {
                 MenuView()
                 ProfileView()
                 FollowersView()
-                DashboardDetailsView()
+                DashboardDetailsView(photos: $viewModel.uploadDetails)
             }
             .padding()
         }

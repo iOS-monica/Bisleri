@@ -12,38 +12,19 @@ protocol NetworkerProtocol: AnyObject {
     
     typealias Headers = [String: Any]
     
-    func request<T>(type: T.Type,
+    func getData<T>(type: T.Type,
                     url: URL,
-                    headers: Headers,
-                    parameters: [String: Any]?,
-                    method: HTTPMethod) -> AnyPublisher<GeneralResponse<T>, Error> where T: Decodable
+                    headers: Headers) -> AnyPublisher<[T], Never> where T : Decodable
     
-  //  func getData(url: URL,
-   //              headers: Headers) -> AnyPublisher<Data, URLError>
 }
 
 final class Networker: NetworkerProtocol {
     
-    func request<T>(type: T.Type,
+    func getData<T>(type: T.Type,
                     url: URL,
-                    headers: Headers,
-                    parameters: [String: Any]? = nil,
-                    method: HTTPMethod) -> AnyPublisher<GeneralResponse<T>, Error> where T : Decodable {
+                    headers: Headers) -> AnyPublisher<[T], Never> where T : Decodable {
         
         var urlRequest = URLRequest(url: url)
-        
-        urlRequest.httpMethod = method.rawValue
-        
-        
-        if let dataDictionary = parameters {
-            do {
-                let requestBody = try JSONSerialization.data(withJSONObject: dataDictionary,
-                                                             options: .prettyPrinted)
-                urlRequest.httpBody = requestBody
-            } catch let error {
-                debugPrint(error.localizedDescription)
-            }
-        }
         
         headers.forEach { key, value in
             if let value = value as? String {
@@ -51,15 +32,12 @@ final class Networker: NetworkerProtocol {
             }
         }
         
-        print("URL", urlRequest)
-        
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
-            .map { data in
-                print("Data", data.response)
-                return data.data
-            }
-            .decode(type: GeneralResponse.self, decoder: JSONDecoder())
+            .map { $0.data }
+            .decode(type: [T].self, decoder: JSONDecoder())
+            .replaceError(with: [])
             .eraseToAnyPublisher()
+        
     }
     
 }
